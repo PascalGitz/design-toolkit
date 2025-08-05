@@ -11,7 +11,7 @@
 
 '<strong>Eingabewerte</strong>'
 φ = 36deg'Innerer Reibungswinkel'
-β = 0deg'Hangneigung'
+β = 20deg'Hangneigung'
 α = 0deg'Wandneigung'
 δ = φ'Wandreibungswinkel'
 
