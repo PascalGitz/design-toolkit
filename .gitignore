@@ -1,8 +1,11 @@
 # Ignore everything
 *
 
-# But don't ignore .gitignore itself
+# Don't ignore .gitignore
 !.gitignore
 
-# Don't ignore .cpd files
-!*.cpd
+# Don't ignore folders (so .cpd files inside them can be tracked)
+!*/
+
+# Don't ignore .cpd files anywhere
+!**/*.cpd
