@@ -9,3 +9,7 @@
 
 # Don't ignore .cpd files anywhere
 !**/*.cpd
+
+!**/*.png
+
+!**/*.jpg

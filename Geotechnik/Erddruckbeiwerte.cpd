@@ -1,15 +1,21 @@
-"Abhängigkeit des Erddruckbeiwerts von den Deformationen"
-'<img style="height:5cm" src="C:/Users/p.gitz/OneDrive - Bänziger Partner AG/Calcpad/Images/image_2088260386156885206.png" alt="image_2088260386156885206.png">
-"Allgemeine Randbedingungen"
-'<img style="height:9cm" src="C:/Users/p.gitz/OneDrive - Bänziger Partner AG/Calcpad/Images/image_1937232571847217570.png" alt="image_1937232571847217570.png">
-"Wandreibungswinkel"
-'<img style="width:15cm;" src="C:/Users/p.gitz/OneDrive - Bänziger Partner AG/Calcpad/Images/image_5945004934698238644.png" alt="image_5945004934698238644.png">
-"Eingabewerte"
+"Erddruckbeiwerte"
+'<strong>Abhängigkeit des Erddruckbeiwerts von den Deformationen</strong>'
+'<img style="height:5cm;" src="C:/Users/p.gitz/Projekte/Calcs/Geotechnik/Images/image_2088260386156885206.png" alt="image_2088260386156885206.png">
+
+'<strong>Allgemeine Randbedingungen</strong>'
+'<img style="height:9cm;" src="C:/Users/p.gitz/Projekte/Calcs/Geotechnik/Images/image_1937232571847217570.png" alt="image_1937232571847217570.png">
+
+'<strong>Wandreibungswinkel</strong>'
+
+'<img style="width:15cm;" src="C:/Users/p.gitz/Projekte/Calcs/Geotechnik/Images/image_5945004934698238644.png" alt="image_5945004934698238644.png">
+
+'<strong>Eingabewerte</strong>'
 φ = 36deg'Innerer Reibungswinkel'
 β = 0deg'Hangneigung'
 α = 0deg'Wandneigung'
 δ = φ'Wandreibungswinkel'
-"Erddruckbeiwerte"
+
+'<strong>Erddruckbeiwerte</strong>'
 'Erdruhedruck:'
 K_0 = (1 - sin(φ))*(1 + sin(β))/cos(β)
 
