@@ -1,2 +1,8 @@
-.docx
-.pdf
+# Ignore everything
+*
+
+# But don't ignore .gitignore itself
+!.gitignore
+
+# Don't ignore .cpd files
+!*.cpd
