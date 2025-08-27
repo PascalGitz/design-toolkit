@@ -1,0 +1,31 @@
+"Plattenbewehrung"
+
+'Bewehrungsparameter'
+Ø_s = 10mm
+s = 150mm
+a_s = Ø_s^2/4*π/s|mm^2/m
+f_sd = 435N/mm^2
+
+
+'Betonparameter'
+h = 200mm|m
+f_cd = 20N/mm^2
+f_ctm = 2.9N/mm^2
+f_ctd = f_ctm*(1/(1 + 0.5*(h/(m*3))))
+c_nom = 30mm
+
+'Statische Höhe'
+d = h - c_nom - Ø_s/2
+
+'Druckzonenhöhe'
+x = a_s*f_sd/(0.85*f_cd)|mm'Druckzonenhöhe'
+
+'Biegewiderstand'
+m_Rd = (d - 0.425*x)*a_s*f_sd|kNm/m
+
+'Rissmoment'
+m_rd = h^2/6*f_ctd|kNm/m
+
+'Duktilität'
+x/d
+x/d ≤ 0.35

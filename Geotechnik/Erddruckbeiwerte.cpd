@@ -11,9 +11,9 @@
 
 '<strong>Eingabewerte</strong>'
 φ = 36deg'Innerer Reibungswinkel'
-β = 20deg'Hangneigung'
+β = 0deg'Hangneigung'
 α = 0deg'Wandneigung'
-δ = φ'Wandreibungswinkel'
+δ = [0*φ; 2/3*φ; φ]'Wandreibungswinkel'
 
 '<strong>Erddruckbeiwerte</strong>'
 'Erdruhedruck:'
