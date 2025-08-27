@@ -1,0 +1,64 @@
+"Durchstanzen"
+'<strong>''Ohne Durchstanzbewehrung''</strong>'
+
+'Betonparameter'
+h = 250mm
+τ_cd = 1.1N/mm^2
+D_max = 32mm
+
+'Betonstahlparameter'
+f_sd = 435N/mm^2
+E_s = 205000N/mm^2
+
+'Platteneigenschaften'
+d = 200mm
+l_x = 2m'Spannweite in X-Richtung'
+l_y = 5m'Spannweite in Y-Richtung'
+
+'Wirksame statische Höhe'
+d_v = 150mm
+
+'<img style="width:15cm;" src="./Images/image_2260984927918662272.png" alt="image_2260984927918662272.png">
+
+'<img style="width:15cm;" src="./Images/image_433902959008241290.png" alt="image_433902959008241290.png">
+
+'Umfang des Nachweisschnitts'
+u = 750mm
+
+'<img style="width:15cm;" src="./Images/image_7901498035581137213.png" alt="image_7901498035581137213.png">
+
+
+
+'Durchmesser eines zum Nachweisschnitt flächengleichen Kreises'
+b = sqrt((u/4)^2/4)
+
+'Exzentrizität den Schwerpunkten des Nachweisschnitts und des flächengleichen Kreises'
+e_u = 10mm
+
+'Der Beiwert zur Abminderung des Umfangs des Nachweisschnitts infolge Momentenübertragung von der Stütze in die Platte'
+k_e = 1/(1 + e_u/b)
+
+'Einfluss des Grösstkorns'
+k_g = 48/(16 + D_max/mm)
+
+'Biegeausnutzung'
+m_sd = 1kNm/m
+m_Rd = 1kNm/m
+
+'Schlankheit der Platte'
+r_sx = 0.22*l_x
+r_sy = 0.22*l_y
+
+ψ(r_s) = 1.5*r_s/d*(f_sd/E_s)*(m_sd/m_Rd)^(2/3)
+ψ_x = ψ(r_sx)
+ψ_y = ψ(r_sy)
+
+'Beiwert Bauteilgrösse, Plattenrotation und Maximalkorn'
+d = d|mm'Gewährleistung Einheit'
+k_rx = 1/(0.45 + 0.18*ψ_x*(d/mm)*k_g)
+k_ry = 1/(0.45 + 0.18*ψ_y*(d/mm)*k_g)
+
+'Durchstanzwiderstand ohne Durchstanzbewehrung'
+V_Rdx,c = k_rx*τ_cd*d_v*u
+V_Rdy,c = k_ry*τ_cd*d_v*u
+

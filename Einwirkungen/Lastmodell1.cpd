@@ -1,7 +1,7 @@
 "Lastmodell 1"
 '<strong>Darstellung der fiktiven Fahrstreifen</strong>'
 'In der Summe entsprechen die Achslasten 600 kN für den fiktiven Fahrstreifen 1'
-'<img style="width:15cm;" src="C:/Users/p.gitz/Projekte/Calcs/Einwirkungen/Images/image_3866081199986303116.png" alt="image_3866081199986303116.png">
+'<img style="width:15cm;" src="./Images/image_3866081199986303116.png" alt="image_3866081199986303116.png">
 
 '<strong>Fiktive Fahrstreifen</strong>'
 b = 8m'Fahrstreifenbreite
@@ -20,5 +20,4 @@ Q_k1 = 300kN
 q_k1 = 9kN/m^2
 QA_k = min(1.2*α_Qi*Q_k1 + 0.1*α_qi*q_k1*b_1*l; 900kN)
 QB_k = QA_k
-
 

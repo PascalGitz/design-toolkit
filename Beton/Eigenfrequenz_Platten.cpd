@@ -1,0 +1,37 @@
+"Eigenfrequenz von allseitig gelenkig gelagerten Platten"
+'Betoneigenschaften'
+E_c = 30500MN/m^2
+ν = 0.2
+ρ_c = 2500kg/m^3
+h = 300mm
+
+'Abmessungen'
+a = 12m
+b = 6m
+
+'Einwirkungen - Flächenlast'
+q_d = 4kN/m^2*1.5
+q_d = 2.5kN/m^2
+
+'Plattensteifigkeit'
+D = E_c*h^3/(12*(1 - ν^2))
+
+'Masse'
+g = 10.m/s^2
+m_P = (ρ_c*h*g + q_d)/g|kN*s^2/m^3
+
+'Eigenfrequenz'
+f(i; j) = π^2*(i^2/a^2 + j^2/b^2)*sqrt(D/m_P)/(2*π)|Hz
+
+'Erste Eigenfrequenz'
+f(1; 1)
+
+
+
+
+
+
+
+
+
+

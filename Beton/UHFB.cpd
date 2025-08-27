@@ -1,0 +1,32 @@
+"Bewehrte UHFB-Beton-Verbundbauteile Nach SIA 2052:2016"
+'<strong>''Eigenschaften UHFB''</strong>'
+γ_U = 1.5'Widerstandsbeiwert Tragsicherheit'
+E_Um = 50kN/mm^2|N/mm^2
+
+'Zugverhalten'
+η_K = 0.9'Faserorientierungsbeiwert'
+η_hU = 1'Einfluss der Bauteildicke auf die Faserorientierung'
+η_t = 1'Einfluss der Einwirkungsdauer, Erhöhung bei stossartigen Einwirkungen'
+
+f_Utek = 10N/mm^2'Charakteristische elastische Grenzzugfestigkeit'
+f_Utuk = f_Utek*1.2'Charakteristischer Wert der Zugfestigkeit'
+
+f_Uted = η_t*η_hU*η_K*f_Utek/γ_U'Bemessungswert der elastischen Grenzzugfestigkeit'
+f_Utud = η_t*η_hU*η_K*f_Utuk/γ_U'Bemessungswert der Zugfestigkeit'
+
+ε_Utu = 2‰'Dehnung beim Erreichen der Zugfestigkeit'
+
+'Druckverhalten'
+η_fU1 = 1
+η_fU2 = 1'Druckglied'
+
+f_Uck = 120N/mm^2 - 8N/mm^2'Charakteristische Würfeldruckfestigkeit (5%-Fraktilwert)'
+f_Ucd = η_t*η_fU1*η_fU2*f_Uck/γ_U
+
+'<strong>''Einspanngrad''</strong>'
+φ_Uoo = 1.2'Endkriechzahl 4 Tage nach Erstellung ohne thermische Nachbehandlung'
+ε_Usoo = 0.6‰'Endwert des Schwindens für CEM I'
+ε_Ue,max = ε_Usoo/(1 + φ_Uoo)|‰
+σ_Ue,max = ε_Ue,max*E_Um'die in einem vollständig eingespannten Verbundsystem auftretende Zugspannung im UHFB'
+σ_Ue = 10N/mm^2'unter Berücksichtigung der Steifigkeit des Verbundsystems auftretende Zugspannung im UHFB'
+μ_U = σ_Ue/σ_Ue,max
