@@ -1,0 +1,37 @@
+"Balkenbewehrung"
+
+'<img style="width:15cm;" src="C:/Users/p.gitz/AppData/Local/Temp/Calcpad/Images/image_1787900904668346442.png" alt="image_1787900904668346442.png">
+
+'Bewehrungsparameter'
+Ø_s = 20mm
+Ø_sw = 12mm'Durchmesser Schubbügel'
+n_h = 6'Anzahl Stäbe horizontal'
+n_v = 1'Anzahl Reihen'
+s_v = 60mm + Ø_s'Achsabstand Eisen vertikal'
+A_s = Ø_s^2/4*π*n_h*n_v|mm^2
+f_sd = 435N/mm^2
+
+'Betonparameter'
+b_w = 800mm
+h = 750mm
+c_nom = 40mm
+f_cd = 16.5N/mm^2
+
+'Statische Höhe'
+d = h - c_nom - ((n_v - 1)*s_v + Ø_s)/2 - Ø_sw
+
+'Druckzonenhöhe'
+x = A_s*f_sd/(0.85*f_cd*b_w)|mm
+
+'Biegewiderstand'
+z = d - 0.425*x
+M_Rd = z*A_s*f_sd|kNm
+
+'Duktilität'
+x/d
+x/d ≤ 0.35
+
+'Platz zwischen den Eisen horizontal'
+s_h = (b_w - 2*c_nom - n_h*Ø_s)/(n_h - 1)
+
+
