@@ -1,13 +1,13 @@
 "Erddruckbeiwerte"
 '<strong>Abhängigkeit des Erddruckbeiwerts von den Deformationen</strong>'
-'<img style="height:5cm;" src="C:/Users/p.gitz/Projekte/Calcs/Geotechnik/Images/image_2088260386156885206.png" alt="image_2088260386156885206.png">
+'<img style="height:5cm;" src="./Images/image_2088260386156885206.png" alt="image_2088260386156885206.png">
 
 '<strong>Allgemeine Randbedingungen</strong>'
-'<img style="height:9cm;" src="C:/Users/p.gitz/Projekte/Calcs/Geotechnik/Images/image_1937232571847217570.png" alt="image_1937232571847217570.png">
+'<img style="height:9cm;" src="./Images/image_1937232571847217570.png" alt="image_1937232571847217570.png">
 
 '<strong>Wandreibungswinkel</strong>'
 
-'<img style="width:15cm;" src="C:/Users/p.gitz/Projekte/Calcs/Geotechnik/Images/image_5945004934698238644.png" alt="image_5945004934698238644.png">
+'<img style="width:15cm;" src="./Images/image_5945004934698238644.png" alt="image_5945004934698238644.png">
 
 '<strong>Eingabewerte</strong>'
 φ = 36deg'Innerer Reibungswinkel'
