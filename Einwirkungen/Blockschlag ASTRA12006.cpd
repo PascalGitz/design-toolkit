@@ -1,0 +1,41 @@
+"Blockschlag nach ASTRA 12006"
+'<img style="height:50%; width:50%;" src="./Images/image_1146531052027235221.png" alt="image_1146531052027235221.png">
+"Parameter"
+'Ersatzkugel'
+m_k = 150t
+r_e = 2.3m
+v_k = 9m/s
+alpha_k = [50; 80]*deg
+l_ausb = 10m
+
+'Eindeckung'
+M_Ek = 15MN/m^2
+phi_k = 34deg
+e = 2m
+
+"Statische Ersatzkraft"
+F_k = 2.8*e^(-0.5)*r_e^0.7*M_Ek^0.4*tan(phi_k)*(m_k*v_k^2/2)^0.6
+F_zk = F_k*sin(alpha_k)'Vertikalkomponente'
+F_yk = F_k*cos(alpha_k)'Horizontalkomponente'
+t = m_k*v_k^2/F_k'Eindringtiefe'
+
+"Bemessungswert der Ersatzkraft"
+C = 0.4'Duktilitätsbeiwert - erfordert das Einlegen von Schubbewehrung'
+A_d = F_k*C
+A_zd = F_zk*C
+A_yd = F_yk*C
+
+"Ausbreitung der Ersatzkraft"
+'<img style="height:50%; width:50%;" src="./Images/image_167735502228980905.png" alt="image_167735502228980905.png">
+
+d = (e - t)*sin(30deg)*2 + r_e
+q_zd = A_zd/d/l_ausb|kN/m^2
+q_yd = A_yd/d/l_ausb|kN/m^2
+
+"Zusammenfassung"
+'Es wird vorausgesetzt, dass die Galerie mindestens'e'eingedeckt ist. Zudem ist duktiles Verhalten zu gewährleisten durch das Einlegen von Schubbewehrung. Unter diesen Voraussetzungen kann folgende Ersatzkraft angesetzt werden:
+'Es wird eine Lastausbreitung in Längsrichtung von'l_ausb'angenommen'
+
+q_zd
+q_yd
+

@@ -1,0 +1,62 @@
+"Parameter"
+'Baugrund'
+phi = 36°
+gamma_phi = 1.2
+phi_d = atan(tan(phi/gamma_phi))*°
+c = 0kN/m^2
+beta = 0°'Geländeneigung'
+gamma = 20kN/m^3'raumlast Boden'
+
+'Fundament'
+b = 6m - 2*30cm
+l = 100m
+t = 1m
+alpha = 0°'Neigung Untersicht'
+
+'Last'
+q = 0kN/m^2'Auflast'
+T = 600kN
+N = 2300kN
+
+"Erweiterte Tragfähigkeitsformel nach Terzaghi für drainierte Verhältnisse"
+
+'<img style="height:247pt; width:401pt;" src="./Images/image_2566158604678647317.png" alt="image_2566158604678647317.png">
+
+phi = phi_d
+
+'Tragfähigkeitsfaktoren'
+Nq = e^(pi*tan(phi))*tan(45° + 0.5*phi)^2
+Nc = (Nq - 1)*1/tan(phi)
+Ngamma = 1.8*(Nq - 1)*tan(phi)
+
+'Formfaktor'
+sc = 1 + b/l*Nq/Nc
+sq = 1 + b/l*tan(phi)
+sgamma = 1 - 0.4*b/l
+
+'Tiefenfaktor'
+dc = 1 + 0.007*atan(t/b)
+dq = 1 + 0.035*tan(phi)*(1 - sin(phi))^2*atan(t/b)
+dgamma = 1
+
+'Lastneigungsfaktor'
+deltaR = atan(T/N)*°
+iq = (1 - (1/2*T)/(N + b*l*c/tan(phi)))^5
+ic = iq - (1 - iq)/(Nq - 1)
+igamma = (1 - (0.7 - alpha/450°)*T/(N + b*l*c/tan(phi)))^5
+
+'Geländeneigungsfaktoren'
+gc = 1 - beta/147°
+gq = (1 - 1/2*tan(beta))^5
+ggamma = gq
+
+'Fundamentneigungsfaktoren'
+bc = 1 - alpha/147°
+bq = e^(-0.035*alpha/°*tan(phi))
+bgamma = e^(-0.047*alpha/°*tan(phi))
+
+'Tragfähigkeitsformel'
+sigmaf = c*Nc*sc*dc*ic*gc*bc + (gamma*t + q)*Nq*sq*dq*iq*gq*bq + 1/2*gamma*b*Ngamma*sgamma*dgamma*igamma*ggamma*bgamma
+
+N/sigmaf
+
