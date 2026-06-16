@@ -61,4 +61,3 @@ k_ry = 1/(0.45 + 0.18*ψ_y*(d/mm)*k_g)
 'Durchstanzwiderstand ohne Durchstanzbewehrung'
 V_Rdx,c = k_rx*τ_cd*d_v*u
 V_Rdy,c = k_ry*τ_cd*d_v*u
-

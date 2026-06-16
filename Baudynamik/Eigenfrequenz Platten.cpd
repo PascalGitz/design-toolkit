@@ -1,4 +1,6 @@
 "Eigenfrequenz von allseitig gelenkig gelagerten Platten"
+'<img style="width:300pt;" src="./Images/image_727566338697636062.png" alt="image_727566338697636062.png">
+
 'Betoneigenschaften'
 E_c = 30500MN/m^2
 ν = 0.2
@@ -25,7 +27,6 @@ f(i; j) = π^2*(i^2/a^2 + j^2/b^2)*sqrt(D/m_P)/(2*π)|Hz
 
 'Erste Eigenfrequenz'
 f(1; 1)
-
 
 
 

@@ -6,7 +6,7 @@
 
 '<strong>Relative Luftfeuchte</strong>'
 
-'<img style="width:15cm;" src="C:/Users/p.gitz/Projekte/Calcs/Beton/Images/image_2250053086605326851.png" alt="image_2250053086605326851.png">
+'<img style="width:15cm;" src="./Images/image_2250053086605326851.png" alt="image_2250053086605326851.png">
 
 b = 1m'Breite Rechteck'
 h = 2m'Höhe Rechteck'
@@ -18,12 +18,12 @@ RH = 75%'Annahme'
 
 '<strong>Temperaturabweichung</strong>'
 k_T = 0.6'Für T = 8°C'
-'<img style="width:6cm;" src="C:/Users/p.gitz/Projekte/Calcs/Beton/Images/image_4002176967478351108.png" alt="image_4002176967478351108.png">
+'<img style="width:6cm;" src="./Images/image_4002176967478351108.png" alt="image_4002176967478351108.png">
 
 '<strong>Betonalter</strong>'
 'Beiwerte zur Berücksichtigung des Betonalters bei Einwirkungsbeginn und Beiwert zur Berücksichtigung der Lastdauer.'
 
-'<img style="width:15cm;" src="C:/Users/p.gitz/Projekte/Calcs/Beton/Images/image_1469952661188340219.png" alt="image_1469952661188340219.png">
+'<img style="width:15cm;" src="./Images/image_1469952661188340219.png" alt="image_1469952661188340219.png">
 
 'Beiwert des Betonalters bei Einwirkungsbeginn'
 t_0 = 14d

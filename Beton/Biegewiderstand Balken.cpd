@@ -1,6 +1,6 @@
 "Balkenbewehrung"
 
-'<img style="width:15cm;" src="C:/Users/p.gitz/AppData/Local/Temp/Calcpad/Images/image_1787900904668346442.png" alt="image_1787900904668346442.png">
+'<img style="width:15cm;" src="./Images/image_1787900904668346442.png" alt="image_1787900904668346442.png">
 
 'Bewehrungsparameter'
 Ø_s = 20mm
@@ -33,5 +33,4 @@ x/d ≤ 0.35
 
 'Platz zwischen den Eisen horizontal'
 s_h = (b_w - 2*c_nom - n_h*Ø_s)/(n_h - 1)
-
 
