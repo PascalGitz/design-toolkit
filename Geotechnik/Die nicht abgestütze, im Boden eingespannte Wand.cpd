@@ -1,9 +1,10 @@
 "Die nicht abgestütze, im Boden eingespannte Wand"
+"Hintergrund"
 ' Nach Lang Huder'
 
-'<img style="height:293pt; width:528pt;" src="./Images/image_7343402607576745464.png" alt="image_7343402607576745464.png">
+'<img style="width:400pt;" src="./Images/image_7343402607576745464.png" alt="image_7343402607576745464.png">
 
-'Parameter
+"Parameter
 Kah = 0.29
 Kph = 4.8
 
@@ -18,7 +19,7 @@ gamma_G = 1.35
 
 t0 = 3.8m'initiale Annahme'
 
-'Berechnungen
+"Berechnungen
 z0 = H*Kah/(1/gamma_M*Kph - Kah)
 iL = DeltaH/(t0 + z0)
 Ea = 1/2*(H + z0)*H*gamma_erd*Kah*gamma_G
@@ -27,4 +28,6 @@ Ep_bar = 1/2*t0^2*((gamma_erd_eff - iL*gamma_w)*1/gamma_M*Kph - gamma_erd_eff*Ka
 t0 = 3*h0*Ea/(Ep_bar - 3*Ea)'Kontrolle mit initialer Annahme
 C = Ep_bar - Ea
 delta_t = C/(2*gamma_erd*(H + z0 + t0)/gamma_M*Kph)
+
+"Resultate
 t = z0 + t0 + delta_t
