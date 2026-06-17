@@ -9,6 +9,8 @@ Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnung
 
 ## Berechnungsblatt
 Die Struktur des Berechnungsblatt soll sich an folgendem Schema orientieren:
+### Namenskonvention
+`{berechnungstitel}_{hintergrund}_{datum des hintergrunds}`
 ### Hintergrund
 Beschrieb des theoretischen Hintergrunds. Verweis auf Normen oder Forschung.
 ### Parameter
