@@ -7,6 +7,17 @@ Durch die Bündelung dieser Berechnungswerkzeuge in einem gemeinsamen Repository
 # Struktur
 Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [Calcpad](https://calcpad.eu/) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository sowie alle Inhalte werden zunächst auf Deutsch verfasst.
 
+## Berechnungsblatt
+Die Struktur des Berechnungsblatt soll sich an folgendem Schema orientieren:
+### Hintergrund
+Beschrieb des theoretischen Hintergrunds. Verweis auf Normen oder Forschung.
+### Parameter
+Verwendete Berechnungsparameter.
+### Berechnung
+Berechnungsapparat
+### Resultate
+Wichtigste Resultate in Form von Text oder Plots.
+
 # Installation
 Die beste Möglichkeit, das *design-toolkit* zu nutzen, ist das **Clonen des Repositorys**. Das geklonte Repository synchronisiert sich mit Änderungen und stellt somit ein stets aktuelles *design-toolkit* bereit. Das Clonen lässt sich einfach mit [GitHub Desktop](https://desktop.github.com/download/) einrichten.
 
