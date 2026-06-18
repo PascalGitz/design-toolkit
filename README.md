@@ -14,7 +14,7 @@ Beiträge sind sehr willkommen und ausdrücklich erwünscht!
 Dieses Repository lebt von Zusammenarbeit. Eine Anleitung zum Beitragen findet sich [hier](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
 
 ## Struktur
-Die Beiträge haben sich an folgende Struktur zu richten
+Die Beiträge haben sich an folgende Struktur zu richten:
 ### Namenskonvention
 Die Dateibenennung erfolgt nach folgendem Schema:
 `{titel_der_berechnung}-{hintergrund}-{datum des hintergrunds}.cpd`
@@ -34,3 +34,5 @@ Berechnungsapparat
 "Resultate"
 Wichtigste Resultate in Form von Text oder Plots.
 ```
+
+Ein Beispiel der Struktur findet sich [hier](Geotechnik\Einbindetiefe_Freie_Wand-Lang-2011.cpd).
