@@ -1,5 +1,5 @@
 "Einbindetiefe Freie Wand"
-' Nach Bodenmechanik und Grundbau (Lang Huder 2011, ISBN 978-3-642-14686-2) Kapitel 10.5. Die nicht abgestütze, im Boden eingespannte Wand. Die nötige Einbindetiefe lässt sich durch eine Gleichgewichtsformulierung bestimmen.
+'Nach Bodenmechanik und Grundbau (Lang Huder 2011, ISBN 978-3-642-14686-2) Kapitel 10.5. Die nicht abgestütze, im Boden eingespannte Wand. Die nötige Einbindetiefe lässt sich durch eine Gleichgewichtsformulierung bestimmen.
 
 '<img style="width:400pt;" src="./Images/image_7343402607576745464.png" alt="image_7343402607576745464.png">
 
@@ -12,7 +12,7 @@ K_ph = 4.9'Horizontal passiver Erdruck
 γ_e = 20kN/m^3'Raumlast des Materials
 
 'Geometrie
-H = 3.6m'Freie Höhe
+H = 6m'Freie Höhe
 
 'Sicherheitsbeiwerte
 γ_M = 1.5' Partialsicherheit gemäss (Lang Huder 2011)
