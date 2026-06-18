@@ -1,25 +1,30 @@
 # Idee
 Die Idee dieses Repositorys ist es, eine Sammlung von Berechnungsblättern für Bauingenieure bereitzustellen.  
-Ziel ist es, sich vom branchenüblichen Ansatz zu lösen, bei dem lokale Excel-Dateien verwendet werden, die oft als „Blackbox“ funktionieren.  
-
 Durch die Bündelung dieser Berechnungswerkzeuge in einem gemeinsamen Repository soll die Qualität (hinsichtlich Benutzerfreundlichkeit und Hintergrundinformationen) verbessert werden. Zudem soll der kollaborative Ansatz Fehler reduzieren, da mehr Ingenieure die Inhalte prüfen, nutzen und weiterentwickeln können.
 
 # Struktur
-Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository sowie alle Inhalte werden zunächst auf Deutsch verfasst.
+## Repository
+Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository, sowie alle Inhalte werden zunächst auf Deutsch verfasst.
 
 ## Berechnungsblatt
-Die Struktur des Berechnungsblatt soll sich an folgendem Schema orientieren:
 ### Namenskonvention
-`{berechnungstitel}_{hintergrund}_{datum des hintergrunds}`
+`{berechnungstitel}_{hintergrund}_{datum des hintergrunds}.cpd`
+
 ### Inhalt
-#### Berechnungstitel
+Die Struktur des Berechnungsblatt soll sich an folgendem Schema orientieren:
+```
+"Berechnungstitel"
 Beschrieb des theoretischen Hintergrunds. Verweis auf Normen oder Forschung.
-#### Parameter
+
+"Parameter"
 Verwendete Berechnungsparameter.
-#### Berechnung
+
+"Berechnung"
 Berechnungsapparat
-#### Resultate
+
+"Resultate"
 Wichtigste Resultate in Form von Text oder Plots.
+```
 
 # Installation
 Die beste Möglichkeit, das *design-toolkit* zu nutzen, ist das **Clonen des Repositorys**. Das geklonte Repository synchronisiert sich mit Änderungen und stellt somit ein stets aktuelles *design-toolkit* bereit. Das Clonen lässt sich einfach mit [GitHub Desktop](https://desktop.github.com/download/) einrichten.
