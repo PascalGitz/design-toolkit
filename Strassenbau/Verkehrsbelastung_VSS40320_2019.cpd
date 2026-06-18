@@ -1,4 +1,4 @@
-"Verkehrsbelastung nach VSS 40320
+"Verkehrsbelastung 
 'Ermittlung der äquivalenten Verkehrslast über die Gebrauchsdauer nach VSS 40320:2019. Dient als Grundlage für die Dimensionierung des Strassenaufbaus.
 
 "Parameter
@@ -15,4 +15,3 @@ TF0 = DTV*p_lastwagen*f*k
 "Resultate
 TFn = ((1 + r)^n - 1)/(r*n)*TF0'Tägliche äquivalente Verkehrslast
 Wn = 365*n*TFn'Gesamte äquivalente Verkehrslast
-
