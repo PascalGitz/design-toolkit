@@ -35,4 +35,4 @@ Berechnungsapparat
 Wichtigste Resultate in Form von Text oder Plots.
 ```
 
-Ein Beispiel der Struktur findet sich [hier](Geotechnik\Einbindetiefe_Freie_Wand-Lang-2011.cpd).
+Ein Beispiel der Struktur findet sich [hier](Geotechnik/Einbindetiefe_Freie_Wand-Lang-2011.cpd).
