@@ -1,8 +1,13 @@
 # Idee
-Die Idee dieses Repositories besteht in der Sammlung und Bereitstellung von Berechnungsblättern, mit dem Ziel, durch die Nutzung und Überprüfung durch viele Anwender mögliche Fehler zu minimieren. Verschiedene Themengebiete werden dabei von unterschiedlichen Nutzern fachlich fundiert und mit ausreichender inhaltlicher Tiefe ausgearbeitet. Zusätzlich werden alle notwendigen Hintergrundinformationen, die für die jeweiligen Berechnungen erforderlich sind, übersichtlich aufbereitet, sauber dokumentiert und zugänglich hinterlegt, sodass eine transparente, nutzerfreundliche und nachvollziehbare Anwendung gewährleistet ist.
+Es soll eine umfangreiche, zuverlässige, zukunftssichere und anwenderfreundliche Sammlung von Berechnungsblättern für Bauingenieure entstehen. 
 
 # Umsetzung 
-Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository, sowie alle Inhalte werden zunächst auf Deutsch verfasst.
+Die Ablage als öffentlich zugängliches "Repository" bietet einen barrierefreien Zugang für Anwender und Authoren.
+Durch die Nutzung und Überprüfung einer vielzahl von Nutzern werden Berechnungsfehler minimiert und die Qualität erhöht. 
+
+Die Sammlung ist nach ingenieurtechnischen Themen organisiert. Bei den Berechnungsblättern werden die notwendigen Hintergrundinformationen, die für die jeweiligen Berechnungen erforderlich sind, übersichtlich hinterlegt, sodass eine transparente, nutzerfreundliche und nachvollziehbare Anwendung gewährleistet ist. 
+
+Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Sämtliche Inhalte werden zunächst auf Deutsch verfasst.
 
 # Installation
 Die beste Möglichkeit, das *design-toolkit* zu nutzen, ist das **Klonen des Repositorys**. Das geklonte Repository synchronisiert sich mit Änderungen und stellt somit ein stets aktuelles *design-toolkit* bereit. Das Klonen lässt sich einfach mit [GitHub Desktop](https://desktop.github.com/download/) umsetzen.
@@ -10,7 +15,7 @@ Die beste Möglichkeit, das *design-toolkit* zu nutzen, ist das **Klonen des Rep
 ---
 
 # Mach mit!
-Beiträge sind sehr willkommen und ausdrücklich erwünscht!  
+Beiträge sind ausdrücklich erwünscht!  
 Dieses Repository lebt von Zusammenarbeit. Eine Anleitung zum Beitragen findet sich [hier](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
 
 ## Struktur
@@ -35,4 +40,4 @@ Berechnungsapparat
 Wichtigste Resultate in Form von Text oder Plots.
 ```
 
-Ein Beispiel der Struktur findet sich [hier](Geotechnik/Einbindetiefe_Freie_Wand-Lang-2011.cpd).
+Ein Beispiel eines Berechnungsblatts findet sich [hier](Geotechnik/Einbindetiefe_Freie_Wand-Lang-2011.cpd).
