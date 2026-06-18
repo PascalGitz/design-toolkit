@@ -1,6 +1,6 @@
 # Idee
 Die Idee dieses Repositorys ist es, eine Sammlung von Berechnungsblättern für Bauingenieure bereitzustellen.  
-Durch die Bündelung dieser Berechnungswerkzeuge in einem gemeinsamen Repository soll die Qualität (hinsichtlich Benutzerfreundlichkeit und Hintergrundinformationen) verbessert werden. Zudem soll der kollaborative Ansatz Fehler reduzieren, da mehr Ingenieure die Inhalte prüfen, nutzen und weiterentwickeln können.
+Durch die Bündelung dieser Berechnungswerkzeuge soll die Qualität (hinsichtlich Benutzerfreundlichkeit und Hintergrundinformationen) verbessert werden. Zudem soll der kollaborative Ansatz Fehler reduzieren, da mehr Ingenieure die Inhalte prüfen, nutzen und weiterentwickeln können.
 
 # Struktur
 ## Repository
