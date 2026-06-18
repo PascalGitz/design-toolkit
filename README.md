@@ -5,7 +5,7 @@ Ziel ist es, sich vom branchenüblichen Ansatz zu lösen, bei dem lokale Excel-D
 Durch die Bündelung dieser Berechnungswerkzeuge in einem gemeinsamen Repository soll die Qualität (hinsichtlich Benutzerfreundlichkeit und Hintergrundinformationen) verbessert werden. Zudem soll der kollaborative Ansatz Fehler reduzieren, da mehr Ingenieure die Inhalte prüfen, nutzen und weiterentwickeln können.
 
 # Struktur
-Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [Calcpad](https://calcpad.eu/) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository sowie alle Inhalte werden zunächst auf Deutsch verfasst.
+Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository sowie alle Inhalte werden zunächst auf Deutsch verfasst.
 
 ## Berechnungsblatt
 Die Struktur des Berechnungsblatt soll sich an folgendem Schema orientieren:
