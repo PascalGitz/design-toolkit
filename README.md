@@ -3,9 +3,9 @@ Es soll eine umfangreiche, zuverlässige, zukunftssichere und anwenderfreundlich
 
 # Umsetzung 
 Die Ablage als öffentlich zugängliches "Repository" bietet einen barrierefreien Zugang für Anwender und Authoren.
-Durch die Nutzung und Überprüfung einer vielzahl von Nutzern werden Fehler minimiert. 
+Durch die Nutzung und Überprüfung einer vielzahl von Nutzern werden Berechnungsfehler minimiert und die Qualität erhöht. 
 
-Die Sammlung ist nach ingenieurtechnischen Themen organisiert. Bei den Berechnungsblättern werden alle notwendigen Hintergrundinformationen, die für die jeweiligen Berechnungen erforderlich sind, übersichtlich aufbereitet, sauber dokumentiert und zugänglich hinterlegt, sodass eine transparente, nutzerfreundliche und nachvollziehbare Anwendung gewährleistet ist. 
+Die Sammlung ist nach ingenieurtechnischen Themen organisiert. Bei den Berechnungsblättern werden die notwendigen Hintergrundinformationen, die für die jeweiligen Berechnungen erforderlich sind, übersichtlich hinterlegt, sodass eine transparente, nutzerfreundliche und nachvollziehbare Anwendung gewährleistet ist. 
 
 Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Sämtliche Inhalte werden zunächst auf Deutsch verfasst.
 
