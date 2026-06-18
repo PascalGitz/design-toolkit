@@ -31,7 +31,7 @@ h_0 = (H*(1/3*H + z_0) + 2/3*z_0^2)/(H + z_0)
 E_Δp(t_0) = 1/2*t_0^2*γ_e*(1/γ_M*K_ph - K_ah)
 
 #hide
-'Numerische Lösung. Wird durchiteriert bis zum Vorzeichenwechsel.
+'Numerische Lösung. Wird durchiteriert bis zum Vorzeichenwechsel der folgenden Funktion.
 f(t_0) = 3*h_0*E_a/(E_Δp(t_0) - 3*E_a) - t_0
 
 $Plot{f(t_0) @ t_0 = 0m : 5*H}
@@ -48,6 +48,9 @@ D_t0 = 0.1m'Inkrement
 	#end if 
 #loop
 #show
+'Hebelarm der Einspannkraft
+t_0
+
 'Einspannkraft als Hilfsgrösse
 C = E_Δp(t_0) - E_a
 
