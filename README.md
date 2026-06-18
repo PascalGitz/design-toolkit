@@ -17,7 +17,7 @@ Dieses Repository lebt von Zusammenarbeit. Eine Anleitung zum Beitragen findet s
 Die Beiträge haben sich an folgende Struktur zu richten
 ### Namenskonvention
 Die Dateibenennung erfolgt nach folgendem Schema:
-`{berechnungstitel}_{hintergrund}_{datum des hintergrunds}.cpd`
+`{titel_der_berechnung}-{hintergrund}-{datum des hintergrunds}.cpd`
 
 ### Inhalt
 Die Struktur eines Berechnungsblatts orientiert sich an folgendem Aufbau:
