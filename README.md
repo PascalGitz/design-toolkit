@@ -1,31 +1,43 @@
 # Idee
-Die Idee dieses Repositorys ist es, eine Sammlung von Berechnungsblättern für Bauingenieure bereitzustellen.  
-Ziel ist es, sich vom branchenüblichen Ansatz zu lösen, bei dem lokale Excel-Dateien verwendet werden, die oft als „Blackbox“ funktionieren.  
+Es soll eine umfangreiche, zuverlässige, zukunftssichere und anwenderfreundliche Sammlung von Berechnungsblättern für Bauingenieure entstehen. 
 
-Durch die Bündelung dieser Berechnungswerkzeuge in einem gemeinsamen Repository soll die Qualität (hinsichtlich Benutzerfreundlichkeit und Hintergrundinformationen) verbessert werden. Zudem soll der kollaborative Ansatz Fehler reduzieren, da mehr Ingenieure die Inhalte prüfen, nutzen und weiterentwickeln können.
+# Umsetzung 
+Die Ablage als öffentlich zugängliches "Repository" bietet einen barrierefreien Zugang für Anwender und Authoren.
+Durch die Nutzung und Überprüfung einer vielzahl von Nutzern werden Berechnungsfehler minimiert und die Qualität erhöht. 
 
-# Struktur
-Das Repository ist nach ingenieurtechnischen Themen organisiert. Alle Berechnungsblätter werden mit [Calcpad](https://calcpad.eu/) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Das Repository sowie alle Inhalte werden zunächst auf Deutsch verfasst.
+Die Sammlung ist nach ingenieurtechnischen Themen organisiert. Bei den Berechnungsblättern werden die notwendigen Hintergrundinformationen übersichtlich hinterlegt, sodass eine transparente, nutzerfreundliche und nachvollziehbare Anwendung gewährleistet ist. 
 
-## Berechnungsblatt
-Die Struktur des Berechnungsblatt soll sich an folgendem Schema orientieren:
-### Namenskonvention
-`{berechnungstitel}_{hintergrund}_{datum des hintergrunds}`
-### Inhalt
-#### Berechnungstitel
-Beschrieb des theoretischen Hintergrunds. Verweis auf Normen oder Forschung.
-#### Parameter
-Verwendete Berechnungsparameter.
-#### Berechnung
-Berechnungsapparat
-#### Resultate
-Wichtigste Resultate in Form von Text oder Plots.
+Alle Berechnungsblätter werden mit [CalcpadCE](https://github.com/imartincei/CalcpadCE) umgesetzt, dessen Open-Source-Charakter langfristige Nachhaltigkeit und Zukunftssicherheit gewährleisten soll. Sämtliche Inhalte werden zunächst auf Deutsch verfasst.
 
 # Installation
-Die beste Möglichkeit, das *design-toolkit* zu nutzen, ist das **Clonen des Repositorys**. Das geklonte Repository synchronisiert sich mit Änderungen und stellt somit ein stets aktuelles *design-toolkit* bereit. Das Clonen lässt sich einfach mit [GitHub Desktop](https://desktop.github.com/download/) einrichten.
+Die beste Möglichkeit, das *design-toolkit* zu nutzen, ist das **Klonen des Repositorys**. Das geklonte Repository synchronisiert sich mit Änderungen und stellt somit ein stets aktuelles *design-toolkit* bereit. Das Klonen lässt sich einfach mit [GitHub Desktop](https://desktop.github.com/download/) umsetzen.
 
 ---
 
 # Mach mit!
-Beiträge sind sehr willkommen und ausdrücklich erwünscht!  
+Beiträge sind ausdrücklich erwünscht!  
 Dieses Repository lebt von Zusammenarbeit. Eine Anleitung zum Beitragen findet sich [hier](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
+
+## Struktur
+Die Beiträge haben sich an folgende Struktur zu richten:
+### Namenskonvention
+Die Dateibenennung erfolgt nach folgendem Schema:
+`{titel_der_berechnung}-{hintergrund}-{datum des hintergrunds}.cpd`
+
+### Inhalt
+Die Struktur eines Berechnungsblatts orientiert sich an folgendem Aufbau:
+```
+"Berechnungstitel"
+Beschrieb des theoretischen Hintergrunds. Verweis auf Normen oder Forschung.
+
+"Parameter"
+Verwendete Berechnungsparameter.
+
+"Berechnungen"
+Berechnungsapparat
+
+"Resultate"
+Wichtigste Resultate in Form von Text oder Plots.
+```
+
+Ein Beispiel eines Berechnungsblatts findet sich [hier](Geotechnik/Einbindetiefe_Freie_Wand-Lang-2011.cpd).

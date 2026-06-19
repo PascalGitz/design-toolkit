@@ -1,0 +1,64 @@
+"Einbindetiefe Freie Wand"
+'Nach Bodenmechanik und Grundbau (Lang Huder 2011, ISBN 978-3-642-14686-2) Kapitel 10.5. Die nicht abgestütze, im Boden eingespannte Wand. Die nötige Einbindetiefe lässt sich durch eine Gleichgewichtsformulierung bestimmen.
+
+'<img style="width:400pt;" src="./Images/image_7343402607576745464.png" alt="image_7343402607576745464.png">
+
+"Parameter
+'Erddruckbeiwerte
+K_ah = 0.29'Horizontal aktiver Erdruck
+K_ph = 4.9'Horizontal passiver Erdruck
+
+'Raumlast
+γ_e = 20kN/m^3'Raumlast des Materials
+
+'Geometrie
+H = 6m'Freie Höhe
+
+'Sicherheitsbeiwerte
+γ_M = 1.5' Partialsicherheit gemäss (Lang Huder 2011)
+
+"Berechnungen
+'Position Belastungsnullpunkt
+z_0 = H*K_ah/(1/γ_M*K_ph - K_ah)
+
+'Aktive Erddruckkraft
+E_a = 1/2*(H + z_0)*H*γ_e*K_ah
+
+'Angriffspunkt aktive Erddruckkraft zum Belastungsnullpunkt
+h_0 = (H*(1/3*H + z_0) + 2/3*z_0^2)/(H + z_0)
+
+'Resultierender passiver Widerstand
+E_Δp(t_0) = 1/2*t_0^2*γ_e*(1/γ_M*K_ph - K_ah)
+
+#hide
+'Numerische Lösung. Wird durchiteriert bis zum Vorzeichenwechsel der folgenden Funktion.
+f(t_0) = 3*h_0*E_a/(E_Δp(t_0) - 3*E_a) - t_0
+
+$Plot{f(t_0) @ t_0 = 0m : 5*H}
+
+t_0 = 0m'Initialer Schätzwert
+D_t0 = 0.1m'Inkrement
+
+#Repeat 
+	f1 = f(t_0)
+	f2 = f(t_0 + D_t0)
+	t_0 = t_0 + D_t0
+	#if f1*f2 < 0m^2
+		#break
+	#end if 
+#loop
+#show
+'Hebelarm der Einspannkraft
+t_0
+
+'Einspannkraft als Hilfsgrösse
+C = E_Δp(t_0) - E_a
+
+'Ausbreitung der Einspannkraft
+Δ_t = C/(2*γ_e*(H + z_0 + t_0)/γ_M*K_ph)
+
+"Resultate
+'Einbindetiefe
+t = z_0 + t_0 + Δ_t
+'Kontrolle des Gleichgewichts
+-C - E_a + E_Δp(t_0)
