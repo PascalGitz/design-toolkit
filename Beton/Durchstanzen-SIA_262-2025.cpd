@@ -1,17 +1,23 @@
-"Durchstanzen"
-'<strong>''Ohne Durchstanzbewehrung''</strong>'
+"Durchstanzwiderstand ohne Bewehrung"
+'Nach SIA 262:2025
+'<img style="width:15cm;" src="./Images/image_2260984927918662272.png" alt="image_2260984927918662272.png">
 
-'Betonparameter'
+'<img style="width:15cm;" src="./Images/image_433902959008241290.png" alt="image_433902959008241290.png">
+
+'<img style="width:15cm;" src="./Images/image_7901498035581137213.png" alt="image_7901498035581137213.png">
+
+"Parameter
+'Beton'
 h = 250mm
 f_ck = 30N/mm^2
 τ_cd = 1.1N/mm^2
 D_max = 32mm
 
-'Betonstahlparameter'
+'Betonstahl'
 f_sd = 435N/mm^2
 E_s = 205000N/mm^2
 
-'Platteneigenschaften'
+'Geometrie'
 d = 200mm
 l_x = 2m'Spannweite in X-Richtung'
 l_y = 5m'Spannweite in Y-Richtung'
@@ -19,17 +25,10 @@ l_y = 5m'Spannweite in Y-Richtung'
 'Wirksame statische Höhe'
 d_v = 150mm
 
-'<img style="width:15cm;" src="./Images/image_2260984927918662272.png" alt="image_2260984927918662272.png">
-
-'<img style="width:15cm;" src="./Images/image_433902959008241290.png" alt="image_433902959008241290.png">
-
 'Umfang des Nachweisschnitts'
 u = 750mm
 
-'<img style="width:15cm;" src="./Images/image_7901498035581137213.png" alt="image_7901498035581137213.png">
-
-
-
+"Berechnungen
 'Durchmesser eines zum Nachweisschnitt flächengleichen Kreises'
 b = sqrt((u/4)^2/4)
 
@@ -62,6 +61,7 @@ d = d|mm'Gewährleistung Einheit'
 k_rx = 1/(0.45 + 0.18*ψ_x*(d/mm)*k_g)
 k_ry = 1/(0.45 + 0.18*ψ_y*(d/mm)*k_g)
 
+"Resultate
 'Durchstanzwiderstand ohne Durchstanzbewehrung'
 V_Rdx,c = k_rx*τ_cd*d_v*u
 V_Rdy,c = k_ry*τ_cd*d_v*u
