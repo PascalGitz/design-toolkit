@@ -3,6 +3,7 @@
 
 'Betonparameter'
 h = 250mm
+f_ck = 30N/mm^2
 τ_cd = 1.1N/mm^2
 D_max = 32mm
 
@@ -39,7 +40,10 @@ e_u = 10mm
 k_e = 1/(1 + e_u/b)
 
 'Einfluss des Grösstkorns'
-k_g = 48/(16 + D_max/mm)
+k_g_2013 = 48/(16 + D_max/mm)
+r = (60N/mm^2/f_ck)^2
+k_g_2025 = 48/(16 + D_max/mm*min(1; r))
+k_g = max(k_g_2013; k_g_2025; 1.2)
 
 'Biegeausnutzung'
 m_sd = 1kNm/m
