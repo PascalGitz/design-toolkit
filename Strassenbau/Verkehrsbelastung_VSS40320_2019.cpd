@@ -1,17 +1,15 @@
-"Verkehrsbelastung 
+"Äquivalente Verkehrslast über die Gebrauchsdauer
 'Ermittlung der äquivalenten Verkehrslast über die Gebrauchsdauer nach VSS 40320:2019. Dient als Grundlage für die Dimensionierung des Strassenaufbaus.
-
 "Parameter
 DTV = 1369'Fahrzeuge pro Tag
 p_lastwagen = 11%'Anteil an Lastwagen
 k = 1.5'Durchschnittlicher Äquivalenzfaktor
+'<img style=" width:500pt;" src="C:/Users/p.gitz/Documents/GitHub/design-toolkit/Strassenbau/Images/image_6693740918626000156.png" alt="image_6693740918626000156.png">
 f = 0.5'Aufteilungsfaktor der totalen Verkehrslast nach Anzahl Fahrstreifen
 n = 20'Anzahl Jahre der gesamten Gebrauchsdauer
 r = 4%'Jährliche Zunahmerate
-
-"Berechnung
+"Berechnungen
 TF0 = DTV*p_lastwagen*f*k
-
 "Resultate
 TFn = ((1 + r)^n - 1)/(r*n)*TF0'Tägliche äquivalente Verkehrslast
 Wn = 365*n*TFn'Gesamte äquivalente Verkehrslast
