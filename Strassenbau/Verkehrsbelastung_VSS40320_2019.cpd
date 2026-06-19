@@ -4,7 +4,7 @@
 DTV = 1369'Fahrzeuge pro Tag
 p_lastwagen = 11%'Anteil an Lastwagen
 k = 1.5'Durchschnittlicher Äquivalenzfaktor
-'<img style=" width:500pt;" src="C:/Users/p.gitz/Documents/GitHub/design-toolkit/Strassenbau/Images/image_6693740918626000156.png" alt="image_6693740918626000156.png">
+'<img style=" width:500pt;" src="./Images/image_6693740918626000156.png" alt="image_6693740918626000156.png">
 f = 0.5'Aufteilungsfaktor der totalen Verkehrslast nach Anzahl Fahrstreifen
 n = 20'Anzahl Jahre der gesamten Gebrauchsdauer
 r = 4%'Jährliche Zunahmerate
