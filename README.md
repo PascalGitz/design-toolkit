@@ -33,7 +33,7 @@ Beschrieb des theoretischen Hintergrunds. Verweis auf Normen oder Forschung.
 "Parameter"
 Verwendete Berechnungsparameter.
 
-"Berechnung"
+"Berechnungen"
 Berechnungsapparat
 
 "Resultate"
