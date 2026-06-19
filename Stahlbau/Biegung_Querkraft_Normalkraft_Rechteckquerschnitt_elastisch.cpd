@@ -6,7 +6,7 @@
 'Einwirkungen'
 N_Ed = 200kN
 M_yEd = 30kN*m
-V_zEd = -500*kN
+V_zEd = 500*kN
 
 'Geometrie'
 t = 20mm
@@ -25,11 +25,13 @@ I_y = t*h^3/12
 S_y(z) = t/2*(h^2/4 - z^2)|mm^3
 S_y(0mm)
 
+'Normalspannung'
 σ_xEd(z) = N_Ed/A + M_yEd/I_y*z|N/mm^2
 σ_xEd(-h/2)
+σ_xEd(0mm)
 σ_xEd(h/2)
 
-
+'Schubspannung'
 τ_zxEd(z) = V_zEd*abs(S_y(z))/(t*I_y)|N/mm^2
 τ_zxEd(0mm)
 
@@ -46,7 +48,6 @@ $Plot{τ_zxEd(z) & f_yd(z) & -f_yd(z) @ z = -h/2 : h/2}
 
 'Nachweis mittels von Mises Vergleichsspannung σ_g(z=x)'
 $Plot{σ_gEd(z) & f_yd(z) @ z = -h/2 : h/2}
-
 
 
 
