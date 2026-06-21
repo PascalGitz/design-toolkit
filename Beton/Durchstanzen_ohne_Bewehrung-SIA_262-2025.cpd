@@ -20,7 +20,7 @@ E_s = 205000N/mm^2'Elastizitätsmodul Betonstahl
 h = 400mm'Plattenstärke
 d_v = 354mm'Wirksame statische Höhe für den Durchstanzwiderstand'
 u = 2112mm'Umfang des Nachweisschnitts'
-e_u = 30mm'Exzentrizität den Schwerpunkten des Nachweisschnitts und des flächengleichen Kreises'
+e_u = 30mm'Exzentrizität der Schwerpunkten des Nachweisschnitts und des flächengleichen Kreises. Dient zur Berechnungs des Reduktionsbeiwerts des Umfangs des Nachweisschnitts'
 
 'Biegebeanspruchung Platte
 'Vergleiche Ziffer 4.3.6.4.8 und 4.3.6.4.2
