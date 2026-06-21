@@ -1,0 +1,51 @@
+"Bemessung eines Balkens mit Rechteckquerschnitt
+'Berechnet Rissmoment, Biegewiderstand, Querkraftwiderstand und die gerissene Verformung nach SIA 262:2025.
+"Parameter
+'Geometrie
+h = 300*mm
+c_nom = 40*mm
+d = h - c_nom - 10*mm
+b = 450*mm
+
+'Beton
+f_ck = 30.*MPa
+f_cd = f_ck/1.5
+f_ctm = 2.9*MPa
+f_ctk95 = 1.3*f_ctm
+E_c = 34000.*MPa
+
+'Betonstahl
+f_yk = 500.*MPa
+f_yd = 435.*MPa
+E_s = 200000.*MPa
+n_s = 4'Anzahl Stäbe Biegebewehrung
+
+'Rissanforderungen
+w_nom = 0.5*mm
+
+'Querkraft
+n_sc = 2'Schnittigkeit
+s_w = 100*mm'Teilung der Querkraftbewehrung
+z_sw = 0.9*d'Hebelarm für Spannungsfeld (Kontrolle mit gewählter Biegebewehrung)
+α = 35*deg
+β_ = 90*deg
+d_v = d
+k_c = 0.55
+
+
+'Verformungen
+φ = 2
+w_mI = 8*mm'ungerissene Durchbiegung
+"Berechnungen
+
+'Rissmoment
+f_ct,eff = f_ctm*1.3/(1 + 0.5*h/3)
+M_cr = f_ct,eff*h^2/6*b
+
+'Biegewiderstand
+A_s(ø_s) = ø_s^2/4*pi*n_s
+x_T(ø_s) = A_s(ø_s)*f_yd/(0.85*f_cd*b)
+z(x) = d - 0.425*x
+M_Rd(x) = A_s*f_yd*(d - x*0.425)
+
+x/d
