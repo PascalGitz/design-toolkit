@@ -1,67 +1,73 @@
 "Durchstanzwiderstand ohne Bewehrung"
-'Nach SIA 262:2025
-'<img style="width:15cm;" src="./Images/image_2260984927918662272.png" alt="image_2260984927918662272.png">
+'Nach SIA 262:2025 Kapitel 4.3.6. Durchstanzwiderstand von Platten ohne Durchstanzbewehrung. Die Plattenrotation wird mittels der Näherungsstufe 3 ermittelt. Dies bedingt eine elastische Plattenberechnung.
+'<img style="width:17cm;" src="./Images/image_2260984927918662272.png" alt="image_2260984927918662272.png">
 
-'<img style="width:15cm;" src="./Images/image_433902959008241290.png" alt="image_433902959008241290.png">
+'<img style="width:17cm;" src="./Images/image_433902959008241290.png" alt="image_433902959008241290.png">
 
-'<img style="width:15cm;" src="./Images/image_7901498035581137213.png" alt="image_7901498035581137213.png">
+'<img style="width:17cm;" src="./Images/image_7901498035581137213.png" alt="image_7901498035581137213.png">
 
 "Parameter
 'Beton'
-h = 250mm
-f_ck = 30N/mm^2
-τ_cd = 1.1N/mm^2
-D_max = 32mm
+f_ck = 25N/mm^2'Betondruckfestigkeit charakteristisch
+τ_cd = 1.0N/mm^2'Schubfestigkeit
+D_max = 16mm'Durchmesser Grösstkorn
 
 'Betonstahl'
-f_sd = 435N/mm^2
-E_s = 205000N/mm^2
+f_yd = 435N/mm^2'Fliessspannung Bemessungsniveau
+E_s = 205000N/mm^2'Elastizitätsmodul Betonstahl
 
 'Geometrie'
-d = 200mm
-l_x = 2m'Spannweite in X-Richtung'
-l_y = 5m'Spannweite in Y-Richtung'
+h = 400mm'Plattenstärke
+d_v = 354mm'Wirksame statische Höhe für den Durchstanzwiderstand'
+u = 2112mm'Umfang des Nachweisschnitts'
+e_u = 30mm'Exzentrizität den Schwerpunkten des Nachweisschnitts und des flächengleichen Kreises'
 
-'Wirksame statische Höhe'
-d_v = 150mm
+'Biegebeanspruchung Platte
+'Vergleiche Ziffer 4.3.6.4.8 und 4.3.6.4.2
 
-'Umfang des Nachweisschnitts'
-u = 750mm
+'<img style="height:408pt; width:371pt;" src="./Images/image_1951883812265309381.png" alt="image_1951883812265309381.png">
+'Illustration aus "Durchstanzbemessung in der Schweiz (Kenel und Lips bei Leviat 2023)
 
+d_sx = 362mm'Statische Höhe für Biegung in X-Richtung
+m_sxd = 156kNm/m'Mittelwert der Bewehrungsmomente über die Stützstreifenbreite gemittelt
+r_sx = 1.21m'Abstand zwischen Stützenachse und Nullpunkt des Bewehrungsmoments'
+m_Rxd = 201kNm/m'Biegewiderstand in X-Richtung
+
+d_sy = 346mm
+r_sy = 1.24m
+m_syd = 153kNm/m
+m_Ryd = 191kNm/m
 "Berechnungen
 'Durchmesser eines zum Nachweisschnitt flächengleichen Kreises'
 b = sqrt((u/4)^2/4)
-
-'Exzentrizität den Schwerpunkten des Nachweisschnitts und des flächengleichen Kreises'
-e_u = 10mm
 
 'Der Beiwert zur Abminderung des Umfangs des Nachweisschnitts infolge Momentenübertragung von der Stütze in die Platte'
 k_e = 1/(1 + e_u/b)
 
 'Einfluss des Grösstkorns'
-k_g_2013 = 48/(16 + D_max/mm)
 r = (60N/mm^2/f_ck)^2
-k_g_2025 = 48/(16 + D_max/mm*min(1; r))
-k_g = max(k_g_2013; k_g_2025; 1.2)
+k_g = 48/(16 + D_max/mm*min(1; r))
+k_g = max(k_g; 1.2)
 
-'Biegeausnutzung'
-m_sd = 1kNm/m
-m_Rd = 1kNm/m
-
-'Schlankheit der Platte'
-r_sx = 0.22*l_x
-r_sy = 0.22*l_y
-
-ψ(r_s) = 1.5*r_s/d*(f_sd/E_s)*(m_sd/m_Rd)^(2/3)
-ψ_x = ψ(r_sx)
-ψ_y = ψ(r_sy)
+'Plattenrotation
+ψ(r_s; m_sd; m_Rd; d) = 1.2*r_s/d*(f_yd/E_s)*(m_sd/m_Rd)^(3/2)
+ψ_x = ψ(r_sx; m_sxd; m_Rxd; d_sx)
+ψ_y = ψ(r_sy; m_syd; m_Ryd; d_sy)
 
 'Beiwert Bauteilgrösse, Plattenrotation und Maximalkorn'
-d = d|mm'Gewährleistung Einheit'
-k_rx = 1/(0.45 + 0.18*ψ_x*(d/mm)*k_g)
-k_ry = 1/(0.45 + 0.18*ψ_y*(d/mm)*k_g)
+k_r(ψ; d; k_g) = min(1/(0.45 + 0.18*ψ*(d/mm)*k_g); 2)
+#hide
+d_sx = d_sx|mm'Einheit in mm, da k_r nicht Einheitentreu
+d_sy = d_sy|mm
+#show
+k_rx = k_r(ψ_x; d_sx; k_g)
+k_ry = k_r(ψ_y; d_sy; k_g)
 
 "Resultate
+'Stützstreifenbreite
+b_s = 1.5*sqrt(r_sx*r_sy)
+
 'Durchstanzwiderstand ohne Durchstanzbewehrung'
-V_Rdx,c = k_rx*τ_cd*d_v*u
-V_Rdy,c = k_ry*τ_cd*d_v*u
+V_Rd,c(k_r; τ_cd; d_v; u; k_e) = k_r*τ_cd*d_v*u*k_e
+V_Rdx,c = V_Rd,c(k_rx; τ_cd; d_v; u; k_e)
+V_Rdy,c = V_Rd,c(k_ry; τ_cd; d_v; u; k_e)
