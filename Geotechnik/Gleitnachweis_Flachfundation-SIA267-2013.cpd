@@ -1,0 +1,33 @@
+#include Erddruckbeiwerte-Lang-2011.cpd
+
+"Gleitnachweis
+'Nach SIA 267 2013 Kapitel 8 Flachfundation'
+
+"Parameter
+γ = 20kN/m^3'Raumlast Boden'
+h = 6.6m'Höhe für Erddruck
+
+"Berechnungen
+'Erddruck
+E_akh = γ*h^2*1/2*K_ah(φ; β; α; δ)
+E_akv = γ*h^2*1/2*K_av(φ; β; α; δ)
+
+'Eigengewicht
+G_k = (1m + 1.9m)/2*h*25kN/m^3
+
+'Normalkraft
+E_Nd = (E_akv + G_k)*1.00
+'Horizontalkraft
+E_Td = 1.35*E_akh
+
+'Sohlreibungswinkel, maximal 35°
+δ_d_sohle = atan(tan(35*deg)/1.2)
+
+'Gleitwiderstand
+R_Td = 1/1.2*(E_Nd*tan(δ_d_sohle))
+
+"Resultate
+'Ausnutzung
+R_Td/E_Td
+
+'Es bedarf einen Reibungswinkeln von'φ'darunter ist der Nachweis nicht erfüllt'
