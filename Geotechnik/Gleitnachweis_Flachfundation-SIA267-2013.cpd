@@ -1,5 +1,5 @@
 #include Erddruckbeiwerte-Lang-2011.cpd
-
+'<hr>
 "Gleitnachweis
 'Nach SIA 267 2013 Kapitel 8 Flachfundation'
 
@@ -9,6 +9,7 @@ h = 6.6m'Höhe für Erddruck
 
 "Berechnungen
 'Erddruck
+E_ak = γ*h^2*1/2*K_a(φ; β; α; δ)
 E_akh = γ*h^2*1/2*K_ah(φ; β; α; δ)
 E_akv = γ*h^2*1/2*K_av(φ; β; α; δ)
 
@@ -29,5 +30,11 @@ R_Td = 1/1.2*(E_Nd*tan(δ_d_sohle))
 "Resultate
 'Ausnutzung
 R_Td/E_Td
+'Ausnutzung mit 'φ''
+'<hr>
+"Kippnachweis
+'Momentengleichgewicht um Fundamentkante.
+"Resultate
+Sum_M = 0.9*G_k*1.20m - E_akh*1.35*2.2m + E_akv*1.35*2.05m
+'Summe der Momente mit 'φ'
 
-'Es bedarf einen Reibungswinkeln von'φ'darunter ist der Nachweis nicht erfüllt'
