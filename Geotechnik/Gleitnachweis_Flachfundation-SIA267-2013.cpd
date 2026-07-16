@@ -22,7 +22,7 @@ E_Nd = (E_akv + G_k)*1.00
 E_Td = 1.35*E_akh
 
 'Sohlreibungswinkel, maximal 35°
-δ_d_sohle = atan(tan(35*deg)/1.2)
+δ_d_sohle = atan(tan(min(35*deg; φ))/1.2)
 
 'Gleitwiderstand
 R_Td = 1/1.2*(E_Nd*tan(δ_d_sohle))
@@ -37,4 +37,3 @@ R_Td/E_Td
 "Resultate
 Sum_M = 0.9*G_k*1.20m - E_akh*1.35*2.2m + E_akv*1.35*2.05m
 'Summe der Momente mit 'φ'
-
