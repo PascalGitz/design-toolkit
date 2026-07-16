@@ -1,5 +1,6 @@
 #include Erddruckbeiwerte-Lang-2011.cpd
 '<hr>
+
 "Gleitnachweis
 'Nach SIA 267 2013 Kapitel 8 Flachfundation'
 
@@ -27,13 +28,22 @@ E_Td = 1.35*E_akh
 'Gleitwiderstand
 R_Td = 1/1.2*(E_Nd*tan(δ_d_sohle))
 
+'passiver Widerstand
+K_ph = 2.5'Schätzwert
+R_Ek = 1.6m*γ*1.6m/2*K_ph(φ; β; α; δ)
+R_Ed = R_Ek/1.4
+
 "Resultate
-'Ausnutzung
+'Ausnutzung ohne passiver Widerstand mit 'φ''
 R_Td/E_Td
-'Ausnutzung mit 'φ''
+
+'Ausnutzung mit passivem Widerstand
+(R_Td + R_Ed)/E_Td
 '<hr>
+
 "Kippnachweis
 'Momentengleichgewicht um Fundamentkante.
+
 "Resultate
-Sum_M = 0.9*G_k*1.20m - E_akh*1.35*2.2m + E_akv*1.35*2.05m
+Sum_M = 0.9*G_k*1.40m - E_akh*1.35*2.2m + E_akv*1.35*2.05m
 'Summe der Momente mit 'φ'

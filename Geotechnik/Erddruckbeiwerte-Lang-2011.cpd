@@ -2,11 +2,13 @@
 'Nach Bodenmechanik und Grundbau (Lang Huder 2011, ISBN 978-3-642-14686-2) Kapitel 9.3.13. Aktiver und passiver Beiwert sind nach Coulomb. Der Erdruhedruckbeiwert nach SIA 261:2020.
 '<img style="width:12cm" src="./Images/image_1937232571847217570.png" alt="image_1937232571847217570.png">
 '<img style="width:15cm;" src="./Images/image_5945004934698238644.png" alt="image_5945004934698238644.png">
+
 "Parameter
-φ = 40*deg'Innerer Reibungswinkel'
+φ = 35*deg'Innerer Reibungswinkel'
 β = 30*deg'Hangneigung'
 α = atan(1/10)*deg'Wandneigung'
 δ = 2/3*φ'Wandreibungswinkel'
+
 "Berechnungen
 'Erdruhedruck'
 K_0(φ; β) = (1 - sin(φ))*(1 + sin(β))/cos(β)
@@ -19,6 +21,7 @@ K_av(φ; β; α; δ) = tan(δ - α)*K_ah(φ; β; α; δ)
 'Passiver Erddruckbeiwert'
 K_p(φ; β; α; δ) = cos(φ - α)^2/(cos(α)^2*cos(δ - α)*(1 - ((sin(φ - δ)*sin(φ + β))/(cos(δ - α)*cos(α + β)))^0.5)^2)
 K_ph(φ; β; α; δ) = cos(δ - α)*K_p(φ; β; α; δ)
+
 "Resultate
 'Erdruhedruckbeiwert
 K_0(φ; β)
