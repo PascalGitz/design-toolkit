@@ -1,14 +1,10 @@
 #include Erddruckbeiwerte-Lang-2011.cpd
-'<hr>
-
 "Gleitnachweis
 'Nach SIA 267 2013 Kapitel 8 Flachfundation'
-
 "Parameter
 γ = 20kN/m^3'Raumlast Boden'
 γ_w = 0kN/m^3
 h = 6.6m'Höhe für Erddruck
-
 "Berechnungen
 'Erddruck
 E_ak = γ*h^2*1/2*K_a(φ; β; α; δ)
@@ -23,6 +19,7 @@ G_k = (1m + 1.9m)/2*h*25kN/m^3
 
 'Normalkraft
 E_Nd = (E_akv + G_k)*1.00
+
 'Horizontalkraft
 E_Td = 1.35*E_akh
 
@@ -33,21 +30,17 @@ E_Td = 1.35*E_akh
 R_Td = 1/1.2*(E_Nd*tan(δ_d_sohle))
 
 'passiver Widerstand
-K_ph = 2.5'Schätzwert
-R_Ek = 1.6m*γ*1.6m/2*K_ph(φ; β; α; δ)
+K_ph = 0'Schätzwert
+R_Ek = 1.6m*γ*1.6m/2*K_ph
 R_Ed = R_Ek/1.4
-
 "Resultate
 'Erfüllung ohne passiver Widerstand mit 'φ''
 R_Td/E_Td
 
 'Erfüllung mit passivem Widerstand
 (R_Td + R_Ed)/E_Td
-'<hr>
-
 "Kippnachweis
 'Momentengleichgewicht um Fundamentkante.
-
 "Resultate
 Sum_M = 0.9*G_k*1.40m - E_akh*1.35*2.2m + E_akv*1.35*2.05m - W_k*1.35*2.2m
 E_d_stb = (0.9*G_k*1.40m + E_akv*1.35*2.05m)
