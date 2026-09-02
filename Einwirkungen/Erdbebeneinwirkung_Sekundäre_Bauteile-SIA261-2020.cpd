@@ -1,0 +1,28 @@
+"Erdbebenersatzkraft für sekundäre Bauteile
+'Ermittelt die im Massenschwerpunkt des Bauteils wirkende Horizontalkraft nach SIA261 2020 Kapitel 16.7.
+"Parameter
+'Beiwerte
+γ_f = 1.2'Bedeutungsbeiwert
+a_gd = 0.8m/s^2'Horizontale Bodenbeschleunigung
+q_a = 1.5'Verhaltensbeiwert
+g = 9.81m/s^2'Erdbeschleunigung
+S = 1.45'Parameter zur Bestimmung des elastischen Antwortspektrums
+
+'Bauteil
+G_a = 100kN'Eigenlast
+T_a = 2s'Grundschwingzeit des Bauteils
+z_a = 1m'Höhe des Bauteils über dem Fundament
+
+'Bauwerk
+T_1 = 2*s'Grundschwingzeit des Bauwerks in der betrachteten horizontalen Richtung
+h = 1m'Gesamthöhe des Bauwerks
+
+"Berechnung
+'Ersatzkraft
+F_a = max(γ_f*a_gd*S*G_a/(g*q_a)*((3*(1 + z_a/h)/(1 + (1 - T_a/T_1)^2) - 0.5)); γ_f*a_gd*S*G_a/(g*q_a))
+"Resultate
+F_a
+
+
+
+
